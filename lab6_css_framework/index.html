@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy's Corner - Praktikum 6 CSS Framework</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-teddy fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-page="home">
+                <i class="fas fa-paw me-2"></i>Teddy's Corner
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-page="home"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-page="about"><i class="fas fa-info-circle me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-page="kontak"><i class="fas fa-envelope me-1"></i> Kontak</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div id="home-page" class="page-content active">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="container text-center">
+                <h1 class="hero-title">Welcome to Teddy's Corner</h1>
+                <p class="lead mb-4">Tempat yang hangat dan nyaman untuk berbagi cerita dan pengetahuan. Seperti teddy bear yang selalu menemani, kami hadir untuk Anda.</p>
+                <a class="btn btn-teddy btn-lg px-4 me-3" href="#" data-page="about"><i class="fas fa-heart me-2"></i>Kenali Kami</a>
+                <a class="btn btn-outline-light btn-lg px-4" href="#" data-page="kontak"><i class="fas fa-envelope me-2"></i>Hubungi Kami</a>
+            </div>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" data-page="home"><i class="fas fa-home me-1"></i> Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Beranda</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Content Cards -->
+                    <div class="content-section">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h2 class="mb-0"><i class="fas fa-coffee me-2"></i>Cerita Hangat Bersama</h2>
+                            <span class="teddy-badge">New</span>
+                        </div>
+                        <div class="row align-items-center mt-4">
+                            <div class="col-md-4 text-center mb-3 mb-md-0">
+                                <i class="fas fa-mug-hot feature-icon"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="lead">Seperti secangkir coklat panas di hari yang dingin, kami menyajikan cerita-cerita hangat yang dapat menghangatkan hati dan pikiran Anda. Mari nikmati setiap kata dengan santai.</p>
+                                <a href="#" class="btn btn-teddy">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr class="teddy-divider">
+                    
+                    <div class="content-section">
+                        <h2 class="mb-4"><i class="fas fa-feather-alt me-2"></i>Kenyamanan dalam Setiap Tulisan</h2>
+                        <div class="row align-items-center">
+                            <div class="col-md-8 order-2 order-md-1">
+                                <p class="lead">Setiap artikel kami susun dengan penuh perhatian, seperti merawat teddy bear kesayangan. Kami percaya bahwa pengetahuan yang disampaikan dengan kasih sayang akan lebih mudah diterima dan diingat.</p>
+                                <a href="#" class="btn btn-teddy">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                            <div class="col-md-4 text-center mb-3 mb-md-0 order-1 order-md-2">
+                                <i class="fas fa-feather feature-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr class="teddy-divider">
+                    
+                    <div class="content-section">
+                        <h2 class="mb-4"><i class="fas fa-book-open me-2"></i>Artikel Terbaru</h2>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card feature-card h-100">
+                                    <div class="card-header card-header-teddy">
+                                        <h5 class="mb-0">Seni Menulis dengan Hati</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Belajar menulis dengan penuh perasaan dan empati, menciptakan karya yang menyentuh hati pembaca.</p>
+                                        <a href="#" class="btn btn-teddy btn-sm">Baca</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card feature-card h-100">
+                                    <div class="card-header card-header-teddy">
+                                        <h5 class="mb-0">Menciptakan Rutinitas Menulis</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Tips dan trik untuk membangun kebiasaan menulis yang konsisten dan produktif.</p>
+                                        <a href="#" class="btn btn-teddy btn-sm">Baca</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Feature Cards -->
+                    <div class="card feature-card">
+                        <div class="card-header card-header-teddy text-center">
+                            <h5 class="mb-0"><i class="fas fa-star me-2"></i>Favorit Pembaca</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">Cerita-cerita terpopuler yang paling banyak disukai oleh pembaca setia Teddy's Corner.</p>
+                            <a href="#" class="btn btn-teddy">Lihat Detail</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card feature-card">
+                        <div class="card-header card-header-teddy text-center">
+                            <h5 class="mb-0"><i class="fas fa-history me-2"></i>Arsip Tulisan</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">Jelajahi koleksi tulisan kami dari bulan-bulan sebelumnya.</p>
+                            <a href="#" class="btn btn-teddy">Jelajahi</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar Widgets -->
+                    <div class="sidebar-widget">
+                        <h5 class="widget-title"><i class="fas fa-tags me-2"></i>Kategori Populer</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-book me-2" style="color: var(--primary-brown);"></i>
+                                <a href="#" class="text-decoration-none">Cerita Pendek</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-pencil-alt me-2" style="color: var(--primary-brown);"></i>
+                                <a href="#" class="text-decoration-none">Tips Menulis</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-heart me-2" style="color: var(--primary-brown);"></i>
+                                <a href="#" class="text-decoration-none">Kisah Inspiratif</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-mug-hot me-2" style="color: var(--primary-brown);"></i>
+                                <a href="#" class="text-decoration-none">Review Buku</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h5 class="widget-title"><i class="fas fa-quote-left me-2"></i>Kutipan Hari Ini</h5>
+                        <p class="fst-italic">"Seperti teddy bear yang selalu setia menemani, sebuah cerita yang baik akan selalu menghangatkan hati."</p>
+                        <footer class="blockquote-footer mt-2">Teddy's Corner</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page Content -->
+    <div id="about-page" class="page-content">
+        <div class="container page-section">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" data-page="home"><i class="fas fa-home me-1"></i> Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tentang Kami</li>
+                </ol>
+            </nav>
+            
+            <div class="content-section">
+                <h1 class="section-title text-center mb-5"><i class="fas fa-info-circle me-2"></i>Tentang Teddy's Corner</h1>
+                
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="About Teddy's Corner" class="about-img">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="mb-3">Cerita Kami</h3>
+                        <p>Teddy's Corner lahir dari kecintaan akan cerita-cerita hangat yang dapat menghangatkan hati, seperti kehangatan yang diberikan oleh teddy bear kepada pemiliknya. Kami percaya bahwa setiap orang memiliki cerita unik yang layak untuk dibagikan.</p>
+                        <p>Didirikan pada tahun 2020, Teddy's Corner telah menjadi rumah bagi ratusan penulis dan pembaca yang mencari ketenangan, inspirasi, dan pengetahuan dalam bentuk tulisan yang disajikan dengan penuh kasih sayang.</p>
+                        <a href="#" class="btn btn-teddy mt-3" data-page="kontak">Hubungi Kami</a>
+                    </div>
+                </div>
+                
+                <hr class="teddy-divider">
+                
+                <div class="row mb-5">
+                    <div class="col-12 text-center mb-4">
+                        <h3 class="section-title">Misi Kami</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mission-item">
+                            <h4><i class="fas fa-heart me-2"></i>Menghangatkan Hati</h4>
+                            <p>Kami berkomitmen untuk menyajikan konten yang dapat menghangatkan hati dan memberikan kenyamanan bagi pembaca.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mission-item">
+                            <h4><i class="fas fa-pencil-alt me-2"></i>Memberdayakan Penulis</h4>
+                            <p>Kami memberikan platform bagi penulis pemula dan profesional untuk berbagi karya mereka dengan dunia.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mission-item">
+                            <h4><i class="fas fa-users me-2"></i>Membangun Komunitas</h4>
+                            <p>Kami menciptakan komunitas yang saling mendukung bagi pecinta literatur dan cerita-cerita inspiratif.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="teddy-divider">
+                
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h3 class="section-title">Tim Kami</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Team Member" class="team-img">
+                            <h5>Sarah Johnson</h5>
+                            <p class="text-muted">Founder & Editor in Chief</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Team Member" class="team-img">
+                            <h5>Michael Chen</h5>
+                            <p class="text-muted">Content Director</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Team Member" class="team-img">
+                            <h5>Emily Rodriguez</h5>
+                            <p class="text-muted">Community Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontak Page Content -->
+    <div id="kontak-page" class="page-content">
+        <div class="container page-section">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" data-page="home"><i class="fas fa-home me-1"></i> Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kontak</li>
+                </ol>
+            </nav>
+            
+            <div class="content-section">
+                <h1 class="section-title text-center mb-5"><i class="fas fa-envelope me-2"></i>Hubungi Kami</h1>
+                
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <p class="lead">Kami senang mendengar dari Anda! Silakan hubungi kami melalui form di bawah ini atau melalui informasi kontak yang tersedia.</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-info text-center">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <h4>Alamat Kami</h4>
+                            <p>Jl. Kenangan Indah No. 123<br>Jakarta Selatan, 12540</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-info text-center">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <h4>Telepon</h4>
+                            <p>(021) 123-4567<br>Senin - Jumat, 09:00 - 17:00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-info text-center">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h4>Email</h4>
+                            <p>hello@teddyscorner.com<br>info@teddyscorner.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="teddy-divider">
+                
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h3 class="text-center mb-4">Kirim Pesan</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Alamat Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subjek</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-teddy btn-lg">Kirim Pesan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-teddy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5><i class="fas fa-paw me-2"></i>Teddy's Corner</h5>
+                    <p>Tempat yang hangat dan nyaman untuk berbagi cerita, pengetahuan, dan inspirasi. Seperti teddy bear yang selalu setia menemani.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none" data-page="home">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-page="about">Tentang Kami</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-page="kontak">Kontak</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kontak Kami</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Jl. Kenangan Indah No. 123</li>
+                        <li><i class="fas fa-phone me-2"></i> (021) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> hello@teddyscorner.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: var(--light-brown);">
+            <div class="text-center">
+                <p>© 2024 - Ahmad Rizki - Universitas Pelita Bangsa | Praktikum 6 - CSS Framework</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

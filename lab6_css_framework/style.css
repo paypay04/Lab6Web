@@ -1,0 +1,318 @@
+/* ===== VARIABLES ===== */
+:root {
+    --primary-brown: #8B4513;
+    --secondary-brown: #A0522D;
+    --light-brown: #D2B48C;
+    --cream: #F5F5DC;
+    --dark-brown: #654321;
+    --tan: #D2691E;
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--cream);
+    color: var(--dark-brown);
+    line-height: 1.6;
+    padding-top: 76px; /* Untuk fixed navbar */
+}
+
+/* ===== NAVBAR ===== */
+.navbar-teddy {
+    background: linear-gradient(135deg, var(--primary-brown), var(--dark-brown));
+    box-shadow: 0 2px 15px rgba(139, 69, 19, 0.3);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--cream) !important;
+}
+
+.nav-link {
+    color: var(--light-brown) !important;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--cream) !important;
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    background: linear-gradient(rgba(139, 69, 19, 0.7), rgba(101, 67, 33, 0.7)), 
+                url('https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--cream);
+    padding: 120px 0;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== PAGE SECTIONS ===== */
+.page-section {
+    min-height: 70vh;
+    padding: 50px 0;
+}
+
+.page-content {
+    display: none;
+}
+
+.page-content.active {
+    display: block;
+}
+
+.section-title {
+    color: var(--primary-brown);
+    border-bottom: 3px solid var(--light-brown);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* ===== CARDS ===== */
+.feature-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 25px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(139, 69, 19, 0.2);
+}
+
+.card-header-teddy {
+    background: linear-gradient(135deg, var(--primary-brown), var(--secondary-brown));
+    color: var(--cream);
+    padding: 15px;
+    border-bottom: none;
+    text-align: center;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.content-section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+    border-top: 5px solid var(--light-brown);
+}
+
+.sidebar-widget {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+    border-left: 5px solid var(--primary-brown);
+}
+
+.widget-title {
+    color: var(--primary-brown);
+    border-bottom: 2px solid var(--light-brown);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* ===== BUTTONS ===== */
+.btn-teddy {
+    background: linear-gradient(135deg, var(--primary-brown), var(--secondary-brown));
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: var(--cream);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-teddy:hover {
+    background: linear-gradient(135deg, var(--secondary-brown), var(--tan));
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+    color: var(--cream);
+}
+
+/* ===== LISTS ===== */
+.list-group-item {
+    border: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    background-color: rgba(210, 180, 140, 0.1);
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.list-group-item:hover {
+    background-color: rgba(139, 69, 19, 0.2);
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+    background-color: rgba(210, 180, 140, 0.3);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.breadcrumb-item a {
+    color: var(--primary-brown);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--dark-brown);
+}
+
+/* ===== DIVIDERS ===== */
+hr.teddy-divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--light-brown), transparent);
+    margin: 30px 0;
+}
+
+/* ===== BADGES ===== */
+.teddy-badge {
+    background-color: var(--primary-brown);
+    color: var(--cream);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(139, 69, 19, 0.2);
+    max-width: 100%;
+    height: auto;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--light-brown);
+    margin-bottom: 15px;
+}
+
+.mission-item {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 3px solid var(--primary-brown);
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-info {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+    height: 100%;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: var(--primary-brown);
+    margin-bottom: 15px;
+}
+
+/* ===== FORMS ===== */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid var(--light-brown);
+    padding: 12px 15px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-brown);
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+/* ===== FOOTER ===== */
+.footer-teddy {
+    background: linear-gradient(135deg, var(--dark-brown), #3e2723);
+    color: var(--light-brown);
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    color: var(--light-brown);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--cream);
+}
+
+/* ===== ICONS ===== */
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-brown);
+    margin-bottom: 15px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section {
+        padding: 80px 0;
+    }
+    
+    .page-section {
+        padding: 30px 0;
+    }
+    
+    .content-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .team-img {
+        width: 120px;
+        height: 120px;
+    }
+}
